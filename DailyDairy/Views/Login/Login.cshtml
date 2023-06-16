@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/Content/login.css">
+</head>
+<body>
+
+
+
+    <div class="header">
+        <img src="~/Content/logo.png" alt="">
+
+    </div>
+
+    <div class="login">
+
+
+        <form action="/Login/LoginPost" class="loginform" method="post">
+            <p>Username:</p>
+            <input id="uname" type="text" name="username">
+            <p>Password:</p>
+            <input type="password" name="password" id="pass"> <br>
+
+            <button class="submitbtn" type="submit">Login</button>
+
+
+
+        </form>
+
+
+    </div>
+
+
+
+
+</body>
+</html>
