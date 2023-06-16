@@ -31,6 +31,10 @@
         color: #050505;
     }
 
+
+a:hover {
+    text-decoration: none;
+}
 .body-container {
   
     height: 100%;
