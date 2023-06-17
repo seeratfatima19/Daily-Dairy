@@ -33,11 +33,11 @@ h1, h2 {
 }
 
 .side-menu {
-    //position: fixed;
+   position: fixed;
     background-color: #255D54;
     width: 20vw;
     bottom:0;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -68,9 +68,10 @@ h1, h2 {
 
 .body-container {
   
+    
     height: 100%;
     width:80vw;
-       
+     margin-left:20vw;
 }
 
 #myChart {
