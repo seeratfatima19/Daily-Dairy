@@ -1,0 +1,132 @@
+﻿
+.header{
+
+    //position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+    height:10vh;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.heading{
+    padding-left:20px;
+}
+
+.btn {
+    background: #255D54;
+    color:white;
+    padding: 10px 10px;
+    text-align:center;
+}
+    .btn:hover {
+        color: #255D54;
+        background: white;
+        padding: 3px 8px;
+        border: 2px solid #255D54;
+    }
+
+.header .nav{
+    width:90%;
+    display:flex;
+    align-items:center;
+}
+
+.header .nav .search{
+    flex:3;
+    display:flex;
+    justify-content:center;
+}
+
+.header .nav .search input[type=text]
+{
+     border:none;
+     background:#f1f1f1;
+     padding:10px;
+     width:50%;
+
+}
+
+.header .nav .search button{
+    width:40px;
+    height:50px;
+    padding-bottom:10px;
+    border:none;
+}
+
+.header .nav .search button img{
+    width:30px;
+    height:30px;
+}
+
+    .header .nav .user {
+        flex: 1;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+     
+    }
+
+
+        .header .nav .user .img-case{
+
+            position:relative;
+            width:50px;
+            height:50px;
+         }
+
+        .header .nav .user .img-case img {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+.content{
+    position:relative;
+    margin-top:5vh;
+    min-height:90vh ;
+}
+
+.content h2{
+    color:#255D54;
+}
+
+.content .cards{
+    padding: 20px 15px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    flex-wrap:wrap; 
+}
+
+    .content .cards .card{
+        width: 250px;
+        height: 150px;
+        background: #F7E47A;
+        margin:20px 10px;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+        border:none;
+        box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transition: all 0.3s ease-in-out;
+
+
+    }
+
+        .content .cards .card:hover{
+            transform:scale(1.1);
+            cursor:pointer;
+        }
+
+        .detail-link {
+            color: #453F78;
+            font-size: 12px;
+        }
+

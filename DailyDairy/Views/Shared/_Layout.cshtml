@@ -19,6 +19,10 @@
     @Scripts.Render("~/bundles/modernizr")
     
 
+    @if(IsSectionDefined("AddToHead"))
+      {
+                @RenderSection("AddToHead", required: false);
+       }
 
 </head>
 
@@ -27,14 +31,18 @@
 
     <div class="page-container">
 
+        <div class="side-menu">
 
+            <div class="brand-name">
+                <h1>Daily Dairy</h1><br><br>
+            </div>
 
-        <div class="sidebar">
-            <img src="~/Content/images/logo.png" alt="">
-
-            <a href="">Home</a>
-            <a href="">Charts</a>
-            <a href="">Tables</a>
+            <ul>
+                <li><img src="~/Content/images/dashboard.png">&nbsp;&nbsp;Dashboard</li>
+                <li><img src="~/Content/images/health.png">&nbsp;&nbsp; Health check</li>
+                <li><img src="~/Content/images/chart.png">&nbsp;&nbsp; Charts</li>
+                <li><img src="~/Content/images/logout.png">&nbsp;&nbsp;Logout</li>
+            </ul>
 
         </div>
 

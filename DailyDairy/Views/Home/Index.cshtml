@@ -2,41 +2,112 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@section AddToHead{
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css"/>
 
-<main>
+    }
 
 
+    <!--
+
+        <div class="chart-area" style="width:100%;">
 
 
-    <div class="chart-area" style="width:100%;">
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
-        <h1>hello</h1>
-        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            <script>
 
-        <script>
-        new Chart("myChart", {
-        type: "line",
-        data: {
-        labels: xValues,
-        datasets: [{
-        fill: false,
-        lineTension: 0,
-        backgroundColor: "rgba(0,0,255,1.0)",
-        borderColor: "rgba(0,0,255,0.1)",
-        data: yValues
-        }]
-        },
-        options: {
-        legend: {display: false},
-        scales: {
-        yAxes: [{ticks: {min: 6, max:16}}],
-        }
-        }
-        });
-        </script>
+                const xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+                const yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+            new Chart("myChart", {
+            type: "line",
+            data: {
+            labels: xValues,
+            datasets: [{
+            fill: false,
+            lineTension: 0,
+            backgroundColor: "rgba(0,0,255,1.0)",
+            borderColor: "rgba(0,0,255,0.1)",
+            data: yValues
+            }]
+            },
+            options: {
+            legend: {display: false},
+            scales: {
+            yAxes: [{ticks: {min: 6, max:16}}],
+            }
+            }
+            });
+            </script>
+
+
+        </div>
+
+        -->
+    <!-- <div class="container"> -->
+    <div class="header">
+        <div class="nav">
+            <div class="search">
+                <input type="text" placeholder="search.." />
+                <button type="submit"><img src="~/Content/images/search_icon.png"></button>
+
+            </div>
+
+            <div class="user">
+                <a href="#" class="btn">User</a>
+                <img src="~/Content/images/notification.png" alt=""/>
+                <div class="img-case">
+                    <img src="~/Content/images/user.png" alt="user image"/>
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
 
+    <div class="content">
+
+        <h2 class="heading">Animal Health Stats</h2>
+        <div class="cards">
 
 
+            <div class="card">
+                <div class="box-1">
+                    <h2>Total</h2>
+                    <h2>1600</h2>
 
-</main>
+                    <a href="#" class="detail-link">view details>></a>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="box-2">
+                    <h2>Healthy</h2>
+                    <h2>1500</h2>
+                    <a href="#" class="detail-link">view details>></a>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="box-3">
+                    <h2>Sick</h2>
+                    <h2>100</h2>
+                    <a href="#" class="detail-link">view details>></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="milk-dropdown">
+            <h2 class="heading">Milk Production</h2>
+
+
+        </div>
+
+    </div>
+    <!-- </div> -->
+
+

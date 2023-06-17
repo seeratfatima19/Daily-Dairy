@@ -26,5 +26,25 @@ namespace DailyDairy.Controllers
 
             return View();
         }
+
+        public ActionResult Login()
+        { return View(); }
+
+
+        [HttpPost]
+        public ActionResult LoginVerify()
+        {
+            String login = Request.Form["username"];
+            String password = Request.Form["password"];
+
+            if (login=="admin" && password=="admin")
+                return RedirectToAction("Index");
+            else
+            {
+                ViewBag.ErrMsg = "Invalid User Id/Password";
+                return RedirectToAction("Login");
+            }
+        }
+
     }
 }
